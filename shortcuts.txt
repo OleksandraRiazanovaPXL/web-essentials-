@@ -1,0 +1,3 @@
+CTRL + ALT + l = Code uitlijnen/formetting (control+option)
+Ctrl + k = Commit
+CTRL + SHIFT + = Push
