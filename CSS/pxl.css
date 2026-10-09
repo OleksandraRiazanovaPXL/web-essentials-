@@ -1,11 +1,18 @@
+{
+background-color: #d9ddd7;
+}
+body {
+    font-family: Verdana,sans-serif;
+}
 h1{
     color: green;
 }
 p{
-    color: white;
+    color: #ffffff;
+    padding: 20px;
 }
 p{
-    background-color: lightslategrey;
+    background-color: #6a7689;
 }
 .secondary-color{
     text-decoration: underline;
