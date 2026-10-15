@@ -17,3 +17,10 @@ p{
 .secondary-color{
     text-decoration: underline;
 }
+.highlight {
+    color: yellow;
+    border: 2px solid yellow;
+    margin-right: 20%;
+    margin-left: 20%;
+
+}
