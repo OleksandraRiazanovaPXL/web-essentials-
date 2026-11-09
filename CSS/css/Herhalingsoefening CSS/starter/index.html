@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS After Dark</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav aria-label="Hoofdnavigatie">
+      <a class="logo" href="#top">CSS After Dark</a>
+      <ul>
+        <li><a href="#concepten">Concepten</a></li>
+        <li><a href="#opdracht">Opdracht</a></li>
+        <li><a href="#oefenzones">Oefenzones</a></li>
+        <li><a href="#eindtest">Eindtest</a></li>
+      </ul>
+    </nav>
+    <section class="hero" id="top">
+      <p class="label">Web Essentials · individueel practicum</p>
+      <h1>Geef deze pagina haar eindstijl.</h1>
+      <p class="intro">Oefen het boxmodel, CSS-eenheden en doelgerichte selectors. De Flexbox-layout is al voorzien.</p>
+      <a class="button" href="#opdracht">Start de opdracht</a>
+    </section>
+  </header>
+
+  <main>
+    <section id="concepten" aria-labelledby="concepten-titel">
+      <div class="section-heading"><p class="label">Wat oefen je?</p><h2 id="concepten-titel">Drie CSS-bouwstenen</h2></div>
+      <div class="concept-list">
+        <article class="concept-card"><p class="card-number">01</p><h3>Het boxmodel</h3><p>Content, padding, border en margin bepalen samen de ruimte rond een element.</p><strong>content-box en border-box</strong></article>
+        <article class="concept-card" id="units"><p class="card-number">02</p><h3>CSS-eenheden</h3><p>Gebruik elke eenheid waar die logisch reageert op haar context.</p><ul class="unit-list"><li><code>px</code></li><li><code>%</code></li><li><code>em</code></li><li><code>rem</code></li><li><code>vh</code></li><li><code>vw</code></li></ul></article>
+        <article class="concept-card"><p class="card-number">03</p><h3>Selectors</h3><p>Selecteer precies de elementen die je wilt vormgeven.</p><strong>type, class, id, descendant, attribute en pseudo-class</strong></article>
+      </div>
+    </section>
+
+    <section id="opdracht" aria-labelledby="opdracht-titel">
+      <div class="section-heading"><p class="label">Stappenplan</p><h2 id="opdracht-titel">Werk de basis af</h2></div>
+      <div class="steps">
+        <article class="step-card"><p class="step-number">Fase 1</p><h3>Basis en boxmodel</h3><ol><li>Stel <code>:root</code> in op <code>16px</code>.</li><li>Gebruik overal <code>box-sizing: border-box</code>.</li><li>Geef <code>body</code> achtergrond <code>#090b10</code>, tekst <code>#f4f7fb</code> en regelafstand <code>1.6</code>.</li><li>Geef paragrafen kleur <code>#a7b0bf</code>.</li></ol></article>
+        <article class="step-card"><p class="step-number">Fase 2</p><h3>Eenheden</h3><ol><li>Gebruik <code>90%</code> voor de breedte van hoofdonderdelen.</li><li>Gebruik <code>72rem</code> als maximale breedte.</li><li>Gebruik <code>48vh</code> als minimale hoogte van de hero.</li><li>Gebruik <code>2rem</code> padding op conceptkaarten.</li><li>Gebruik <code>0.75em 1.4em</code> padding op knoppen.</li><li>Gebruik <code>1px</code> voor randen.</li></ol></article>
+        <article class="step-card"><p class="step-number">Fase 3</p><h3>Selectors</h3><ol><li>Gebruik <code>p</code>, <code>.concept-card</code>, <code>#units</code> en <code>nav a</code>.</li><li>Gebruik <code>input[type=&quot;email&quot;]</code>.</li><li>Gebruik <code>:hover</code> en <code>:focus-visible</code>.</li></ol></article>
+      </div>
+    </section>
+
+    <section id="oefenzones" aria-labelledby="oefenzones-titel">
+      <div class="section-heading"><p class="label">Extra oefening</p><h2 id="oefenzones-titel">Maak ook deze zones op</h2><p>De Flexbox-positionering staat klaar. Jij schrijft alleen de stijlen die in de opdrachten gevraagd worden.</p></div>
+      <div class="practice-zones">
+        <article class="practice-zone">
+          <p class="card-number">Oefening 1</p><h3>Promobanner</h3>
+          <ul><li>Geef <code>.demo-banner</code> achtergrond <code>#17313c</code>, rand <code>2px solid #67e8f9</code>, padding <code>1.5rem</code> en marge bovenaan <code>1.25rem</code>.</li><li>Geef de titel kleur <code>#f4f7fb</code> en grootte <code>1.4rem</code>.</li><li>Geef de link padding <code>0.5em 1em</code> en een zichtbare hoverstijl.</li></ul>
+          <div class="demo-banner"><h4>CSS Night Session</h4><p>Werk drie korte CSS-missies af.</p><a href="#eindtest">Bekijk de missie</a></div>
+        </article>
+        <article class="practice-zone">
+          <p class="card-number">Oefening 2</p><h3>Studentenprofiel</h3>
+          <ul><li>Geef de avatar <code>4rem</code> breedte en hoogte, achtergrond <code>#164e63</code> en rand <code>2px solid #67e8f9</code>.</li><li>Maak tags rond met <code>999px</code>, padding <code>0.3em 0.75em</code> en lettergrootte <code>0.85rem</code>.</li><li>Geef <code>[data-level="basis"]</code> achtergrond <code>#67e8f9</code> en tekst <code>#06232b</code>.</li></ul>
+          <div class="demo-profile"><div class="avatar-placeholder" aria-hidden="true"></div><div><h4>Alex Code</h4><p>Web Essentials</p><div class="demo-tags"><span data-level="basis">Basis</span><span>HTML</span><span>CSS</span></div></div></div>
+        </article>
+        <article class="practice-zone">
+          <p class="card-number">Oefening 3</p><h3>Waarschuwing</h3>
+          <ul><li>Gebruik <code>.demo-notice strong</code> voor accentkleur <code>#fbbf24</code>.</li><li>Gebruik <code>.demo-notice a</code> voor kleur <code>#67e8f9</code>.</li><li>Geef de zone padding <code>1.25rem</code>, linkermarge <code>4px solid #fbbf24</code> en achtergrond <code>#1b1710</code>.</li></ul>
+          <aside class="demo-notice"><strong>Let op:</strong><p>Controleer het boxmodel in DevTools.</p><a href="#controle">Open de checklist</a></aside>
+        </article>
+        <article class="practice-zone">
+          <p class="card-number">Oefening 4</p><h3>Voortgangsbalk</h3>
+          <ul><li>Geef de buitenste balk hoogte <code>1rem</code>, achtergrond <code>#111722</code> en rand <code>1px solid #293446</code>.</li><li>Geef de binnenste balk breedte <code>65%</code> en achtergrond <code>#67e8f9</code>.</li><li>Wijzig tijdelijk naar <code>35%</code> en <code>90%</code> en beschrijf het verschil.</li></ul>
+          <div class="demo-progress"><p>Voortgang: 65%</p><div class="progress-track"><div class="progress-value"></div></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="eindtest" aria-labelledby="eindtest-titel">
+      <div class="section-heading"><p class="label">Zelfstandige eindtest</p><h2 id="eindtest-titel">Maak dit blok na zonder stappenplan</h2><p>Bekijk het referentieblok en schrijf zelf geschikte selectors, eigenschappen en waarden.</p></div>
+      <div class="copy-challenge-reference"><span class="mission-status">Nieuwe missie</span><h3>Debug de nachtdienst</h3><p>Los drie CSS-problemen op voor de timer afloopt.</p><a href="#">Start missie</a></div>
+      <div class="acceptance"><h3>Acceptatiecriteria</h3><ul><li>Je eigen blok lijkt duidelijk op het referentieblok.</li><li>Je gebruikt minstens drie verschillende CSS-eenheden.</li><li>Je gebruikt minstens vier verschillende soorten selectors.</li><li>Hover en toetsenbordfocus zijn zichtbaar.</li><li>Het blok blijft bruikbaar bij een viewportbreedte van 320px.</li><li>Je kunt elke keuze uitleggen zonder je code voor te lezen.</li></ul></div>
+    </section>
+
+    <section id="controle" aria-labelledby="controle-titel">
+      <div class="section-heading"><p class="label">Zelfcontrole</p><h2 id="controle-titel">Controleer je resultaat</h2></div>
+      <ul class="checklist"><li>Alle gevraagde eenheden zijn doelgericht gebruikt.</li><li>Alle gevraagde selectortypes hebben een zichtbaar effect.</li><li>Er is geen horizontale scrollbar bij 320px.</li><li>Focus is zichtbaar.</li><li>HTML en CSS zijn gevalideerd.</li></ul>
+      <form class="reflection-form"><h3>Korte reflectie</h3><label for="email">E-mailadres</label><input type="email" id="email" name="email" autocomplete="email"><label for="reflection">Welke CSS-keuze vond je het moeilijkst?</label><textarea id="reflection" name="reflection" rows="5"></textarea><button type="submit">Bewaar mijn reflectie</button></form>
+    </section>
+  </main>
+  <footer><p>CSS After Dark · Web Essentials</p></footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* Vooraf voorzien: Flexbox-layout. Jullie hoeven dit deel niet te wijzigen. */
+nav, nav ul, .concept-list, .practice-zones, .step-card, .demo-profile, .demo-tags, #controle {
+  display: flex;
+}
+nav { align-items: center; justify-content: space-between; gap: 2rem; }
+nav ul, .concept-list, .practice-zones, .demo-tags, #controle { flex-wrap: wrap; gap: 1.25rem; }
+.concept-list > *, .practice-zones > *, #controle > * { flex: 1 1 20rem; }
+.steps { display: flex; flex-direction: column; gap: 1rem; }
+.step-card { align-items: flex-start; gap: 1.5rem; }
+.step-card .step-number { flex: 0 0 7rem; }
+.step-card h3 { flex: 1 1 14rem; }
+.step-card ol { flex: 2 1 28rem; }
+.demo-profile { align-items: center; gap: 1rem; }
+.hero { display: flex; flex-direction: column; justify-content: center; }
+@media (max-width: 52rem) {
+  nav, .step-card { flex-direction: column; }
+  nav { align-items: flex-start; }
+}
+
+/* Schrijf je CSS onder deze regel. Pas de Flexbox-code hierboven niet aan. */
+
+/* TODO 1: basis, kleuren en boxmodel */
+:root {
+  font-size: 16px;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  background: #090b10;
+  color: #f4f7fb;
+  line-height: 1.6;
+}
+p{
+  color: #a7b0bf;
+}
+/* TODO 2: breedtes en CSS-eenheden */
+h2 {
+  width: 90%;
+  width: 75rem;
+  height: 48vh;
+}
+  .concept-card{
+    padding: 2rem;
+  }
+
+
+/* TODO 3: selectors en interactiestijlen */
+
+/* TODO 4: promobanner */
+
+/* TODO 5: studentenprofiel en tags */
+
+/* TODO 6: waarschuwing en voortgangsbalk */
+
+/* TODO 7: zelfstandige eindtest */

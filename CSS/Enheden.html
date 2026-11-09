@@ -9,7 +9,7 @@
 </head>
 <body>
 <h1>PX</h1>
-<p>px (pixels): Een vaste eenheid om de grootte van iets op een scherm te bepalen.</p>
+<div>px (pixels): Een vaste eenheid om de grootte van iets op een scherm te bepalen.</div>
 <img src="1*Goe9vM3cRDZHq_vJJd5QOg.gif" alt="PX">
 
 <h1>PT</h1>
@@ -17,15 +17,26 @@
   vooral bij afdrukken, zoals in Word of PDF.</div>
 
 <h1>%</h1>
-<p>% (procent): Bepaalt hoe groot iets is in
+<div>
+<p class ="procenten">
+    % (procent): Bepaalt hoe groot iets is in
   vergelijking met het bovenliggende element.</p>
+</div>
 
 <h1>EM</h1>
 
 <article>
-  <p>% (procent): Bepaalt hoe groot iets is in
-    vergelijking met het bovenliggende element.</p>
+  <div class="em">
+      Parent = 20px
+    Tekst = 2em
+    Resultaat = 40px (20 × 2)</div>
 </article>
+
+<h1>REM</h1>
+
+<div class="rem">
+    1.5rem = 24px (16 × 1.5)
+</div>
 
 </body>
 </html>

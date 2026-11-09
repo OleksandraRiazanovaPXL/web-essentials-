@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a[href] {
+    background-color: aqua;
+}
+
+/* $ moet eindigen op ...*/
+
+a[href$=".com"]
+ {
+    background-color: yellow;
+}
+
+/*^ moet beginnen met ...)*/
+
+a[href^="http://"]
+{
+    background-color: red;
+}
+a[href*="you"]
+{
+    background-color: green;
+}
+
+article > a {
+
+}
+article a {
+    /* spatie is dat de pakt alle 'a'*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* section.category alle elementen in deze category*/
+/* > 1 niveau meximum niet overaal , en spatie is voor overaal dieper te gan */
+section.category > .product-card{
+
+}

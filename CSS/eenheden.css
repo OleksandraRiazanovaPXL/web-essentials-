@@ -10,5 +10,16 @@ p{
     width:100%;
 }
 article{
-    width:80%;
+    font-size:16px;
+}
+div {
+    font-size: 16px;
+}
+
+.em{
+    font-size: 1.5em;
+}
+.rem {
+    font-size: 1.5rem;
+    background-color: lightpink;
 }

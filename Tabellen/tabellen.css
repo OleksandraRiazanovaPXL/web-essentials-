@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table{
+    width: 40%;
+}
+td, th{
+    border: 1px solid black;
+}
